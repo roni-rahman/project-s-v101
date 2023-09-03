@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="editor.css">
+    <script src="editor.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script> -->
+
+</head>
+
+<body>
+    <h1 class="title">Project S</h1>
+    <div class="editor">
+        <div id="download-area" class="image-area">
+            <!-- <canvas id="canvas"> -->
+            <div id="img-with-bg">
+
+                <p class="watermark">
+                    Screenshot taken with Project-S
+                </p>
+            </div>
+            <!-- </canvas> -->
+        </div>
+        <div class="toolbar">
+            <h2>Edit your image</h2>
+            <div class="tool-item">
+                <label class="tool-label" for="padding">Padding</label>
+                <input class="tool-input" type="range" id="padding" value="50" min="0" max="100">
+            </div>
+            <div class="tool-item">
+                <label class="tool-label" for="roundness">Roundness</label>
+                <input class="tool-input" type="range" id="roundness" value="12" min="0" max="40">
+            </div>
+            <div class="tool-item">
+                <label class="tool-label" for="shadow">Shadow</label>
+                <input class="tool-input" type="range" id="shadow" value="20" min="0" max="50">
+            </div>
+            <div class="tool-item">
+                <label class="tool-label" for="radio">Radio Test</label>
+                <ul id="select-radio">
+                    <li>
+                        <input type='radio' value='1' name='radio' id='radio1' checked />
+                        <label for='radio1' class="radio-choice btn1"></label>
+                    </li>
+                    <li>
+                        <input type='radio' value='2' name='radio' id='radio2' />
+                        <label for='radio2' class="radio-choice btn2"></label>
+                    </li>
+                    <li>
+                        <input type='radio' value='3' name='radio' id='radio3' />
+                        <label for='radio3' class="radio-choice btn3"></label>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="tool-item">
+                <label class="tool-label" for="background">Background</label>
+                <div class="bg-button-group">
+                    <button class="bg-button" id="option-1"></button>
+                    <button class="bg-button" id="option-2"></button>
+                    <button class="bg-button" id="option-3"></button>
+                </div>
+            </div> -->
+            <button id="download-btn" class="download-btn">Download</button>
+        </div>
+    </div>
+
+    <script src="html2canvas/html2canvas.min.js"></script>
+</body>
+
+</html>

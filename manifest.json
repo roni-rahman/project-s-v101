@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Project S",
+  "version": "1.0.1",
+  "description": "This is first prototype of my screeshot app",
+  "author": {
+    "name": "Roni"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": ["tabs", "activeTab"]
+}

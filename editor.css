@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+}
+
+.title {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.editor {
+    display: flex;
+    width: 100vw;
+    background-color: #eee;
+    justify-content: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.image-area {
+    background-color: #fff;
+    max-width: 1000px;
+}
+
+#img-with-bg {
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.watermark {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.captured-image {
+    width: 100%;
+}
+
+.toolbar {
+    width: 300px;
+}
+
+.tool-item {
+    margin: 20px 0;
+}
+
+.tool-label {
+    font-weight: bold;
+    display: block;
+}
+
+.tool-input {
+    width: 100%;
+}
+
+/* .bg-button-group {
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+}
+
+.bg-button {
+    height: 50px;
+    width: 80px;
+    background-size: cover;
+    cursor: pointer;
+    border-color: orangered;
+} */
+
+/* #option-1 {
+    background-image: url("bg-images/bg-1.jpg");
+}
+#option-2 {
+    background-image: url("bg-images/bg-2.jpg");
+}
+#option-3 {
+    background-image: url("bg-images/bg-3.jpg");
+} */
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.radio-choice {
+    display: block;
+    height: 50px;
+    width: 80px;
+    background-size: cover;
+    cursor: pointer;
+    border-color: orangered;
+}
+
+.btn1 {
+    background-image: url("bg-images/bg-1.jpg");
+}
+.btn2 {
+    background-image: url("bg-images/bg-2.jpg");
+}
+.btn3 {
+    background-image: url("bg-images/bg-3.jpg");
+}
+
+li input {
+    visibility:hidden;
+}
+
+input:checked + label {
+    border: 2px solid red;
+}
+
+
+.download-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(119, 119, 255);
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.download-btn:hover {
+    background-color: rgb(86, 86, 252);
+}
